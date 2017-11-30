@@ -16,14 +16,90 @@
             <span> <i class="icon iconfont icon-zhihu"></i></span>
         </header>
         <section class="section">
-            <ul>
+            <ul class="list">
                 <li>智能排序</li>
                 <li>品牌</li>
                 <li>价格</li>
                 <li>筛选</li>
                 <li>保买车</li>
             </ul>
+            <div class="cont one">
+                 <dl>
+                    <dt><img src="images/pic1.png" alt=""></dt>
+                    <dd>
+                        <h2>雪弗兰科鲁兹299款 1.6L SEAT</h2>
+                        <h3>2010年/9.1万公里<span>急售</span></h3>
+                        <h4><b>4.7万</b><small>首付1.41万</small></h4>
+                        <h5>狂欢继续 贷款利率最高9.5折</h5>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/pic1.png" alt=""></dt>
+                    <dd>
+                        <h2>雪弗兰科鲁兹299款 1.6L SEAT</h2>
+                        <h3>2010年/9.1万公里<span>急售</span></h3>
+                        <h4><b>4.7万</b><small>首付1.41万</small></h4>
+                        <h5>狂欢继续 贷款利率最高9.5折</h5>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/pic1.png" alt=""></dt>
+                    <dd>
+                        <h2>雪弗兰科鲁兹299款 1.6L SEAT</h2>
+                        <h3>2010年/9.1万公里<span>急售</span></h3>
+                        <h4><b>4.7万</b><small>首付1.41万</small></h4>
+                        <h5>狂欢继续 贷款利率最高9.5折</h5>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/pic1.png" alt=""></dt>
+                    <dd>
+                        <h2>雪弗兰科鲁兹299款 1.6L SEAT</h2>
+                        <h3>2010年/9.1万公里<span>急售</span></h3>
+                        <h4><b>4.7万</b><small>首付1.41万</small></h4>
+                        <h5>狂欢继续 贷款利率最高9.5折</h5>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/pic1.png" alt=""></dt>
+                    <dd>
+                        <h2>雪弗兰科鲁兹299款 1.6L SEAT</h2>
+                        <h3>2010年/9.1万公里<span>急售</span></h3>
+                        <h4><b>4.7万</b><small>首付1.41万</small></h4>
+                        <h5>狂欢继续 贷款利率最高9.5折</h5>
+                    </dd>
+                </dl> 
+            </div>
+            <div class="cont two"></div>
+            <div class="cont three"></div>
+            <div class="cont four"></div>
+            <div class="cont five"></div>
         </section>
+        <footer class="footer">
+            <ul>
+                <li>
+                    <span></span>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </footer>
     </div>
 </body>
+<script>
+    var list=document.querySelector('.list');
+    var lis=list.querySelectorAll('li');
+    var cont=document.querySelectorAll(".cont")
+    for(let i=0;i<lis.length;i++){
+        lis[i].onclick=function(){
+            for(var j=0;j<lis.length;j++){
+                lis[j].style.color="#000";
+                cont[j].style.display="none"
+            }
+            lis[i].style.color="red";
+            cont[i].style.display="block"
+        }
+    }
+</script>
 </html> 
